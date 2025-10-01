@@ -196,10 +196,10 @@ const ResizableImage = React.memo(
     const originalLayout = useVector(width, 0);
     const layout = useVector(width, 0);
 
-    const isActive = useDerivedValue(() => currentIndex.value === index, [
-      currentIndex,
-      index,
-    ]);
+    const isActive = useDerivedValue(
+      () => currentIndex.value === index,
+      [currentIndex, index]
+    );
 
     useAnimatedReaction(
       () => {

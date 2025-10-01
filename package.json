@@ -84,6 +84,9 @@
     ]
   },
   "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint && yarn typescript"
+    }
   },
   "release-it": {
     "git": {
